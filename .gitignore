@@ -1,0 +1,5 @@
+node_modules/     # All your dependencies (auto-installed)
+.env              # Secrets like API keys
+build/            # Compiled files
+.DS_Store         # Mac system file
+*.log             # Log files
