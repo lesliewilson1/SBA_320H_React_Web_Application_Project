@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 #root {
   max-width: 1580px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+.app-container {
+  
 }
 
 h1 {
@@ -51,10 +54,27 @@ button {
 }
 
 .question {
-  color:#dd5e89;
-  border-radius: 10px;
+  margin: 10px;
+  padding: 30px 25px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 20px;
+  display: block;
+  color:#000000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: left;
 }
 
 .api {
-  color:#69112e
+  margin: 10px;
+  padding: 30px 25px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 20px;
+  display: block;
+  color:#222121
 }

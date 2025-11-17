@@ -53,7 +53,7 @@ export default function Form() {
 
       </form>
 
-      {showQuestion && <h3 className="question">Question: {showQuestion}</h3>}
+      {showQuestion && <h3 className="question">{showQuestion}</h3>}
       <Api question={showQuestion} />
 
     </>
