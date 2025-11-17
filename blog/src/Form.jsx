@@ -4,18 +4,21 @@ import Api from "./Api";
 export default function Form() {
 
   const [question, setQuestion] = useState("");
-  const [showQuestion, setShowQuestion] = useState(false)
+  const [showQuestion, setShowQuestion] = useState("");
+  const inputRef = useRef(null);
 
-  //-------------------------------End of State------------------------------------------------//
+
+  //---------------------------------------End---------------------------------------------------------//
 
  
-  const inputRef = useRef(null);
 
   //-------------------------------Start of Functions------------------------------------------------//
  
   //Prevent browser from reloading the page
   function handleSubmit(e) {
     e.preventDefault();
+    setShowQuestion(question);
+    setQuestion("");
   }
   
   //Adding a focus
@@ -41,22 +44,18 @@ export default function Form() {
 
               onChange={e => {
                 setQuestion(e.target.value)
-                setShowQuestion(false)
               } }
             />
-            <button 
-              onClick={() => setShowQuestion(true)}>
-                Submit Here
-            </button>
           </label>
+          <button type="submit">
+              Submit Here
+            </button>
 
       </form>
 
-      {showQuestion && <h3>Question: {question}</h3>}
+      {showQuestion && <h3>Question: {showQuestion}</h3>}
+      <Api question={showQuestion} />
 
-      <div>
-        <Api />
-      </div>
     </>
   );
 }

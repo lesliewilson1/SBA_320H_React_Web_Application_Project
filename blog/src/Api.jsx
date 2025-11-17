@@ -1,21 +1,39 @@
 import { useState, useEffect } from 'react'
 
-export default function Api() {
+export default function Api({ question }) {
 
+const [advice, setAdvice] = useState("")
 const URL = 'https://api.adviceslip.com/advice'
 
+//---------------------------------------End---------------------------------------------------------//
+
+//-------------------------------Start of Functions------------------------------------------------//
+
 useEffect(() => {
+    if(!question) return;
+
     const fetchData = async () => {
-        const result = await fetch(URL)
-        const data = await result.json()
-        console.log('Leslie\'s Advice:', data.slip.advice)
+        try{
+            
+                const result = await fetch(URL);
+                const data = await result.json();
+                setAdvice(data.slip.advice);
+                
+    } catch(error) {
+        setAdvice("Oops! Fetch advice not available.");
+        console.error("Failed to catch Advice", error);
+    }
         
     }
-    fetchData()
-}, []) 
+    fetchData();
+}, [question]);
 
-    return (
-        <>
-        </>
-    )
+
+
+return (
+    <>
+        {advice && <h3>Advice: {advice} </h3>}
+    </>
+);
+
 }
