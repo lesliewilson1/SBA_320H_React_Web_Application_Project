@@ -8,7 +8,7 @@ useEffect(() => {
     const fetchData = async () => {
         const result = await fetch(URL)
         const data = await result.json()
-        console.log('Advice:', data.slip.advice)
+        console.log('Leslie\'s Advice:', data.slip.advice)
         
     }
     fetchData()
