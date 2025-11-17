@@ -3,7 +3,7 @@
 
 
 ## 📎About
-A playful React app that lets users submit any question and receive a randomly generated piece of advice from the [Advice Slip API](https://api.adviceslip.com). Designed with clean UI logic, dynamic styling, and modular components. Visit the app **[here]**(https://askleslie.netlify.app/).
+A playful React app that lets users submit any question and receive a randomly generated piece of advice from the [Advice Slip API](https://api.adviceslip.com). Designed with clean UI logic, dynamic styling, and modular components. **Visit the app [here](https://askleslie.netlify.app/).**
 
 ---
 
