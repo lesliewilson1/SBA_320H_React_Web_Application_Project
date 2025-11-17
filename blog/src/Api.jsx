@@ -32,7 +32,7 @@ useEffect(() => {
 
 return (
     <>
-        {advice && <h3 className="api">Advice: {advice} </h3>}
+        {advice && <h3 className="api">{advice} </h3>}
     </>
 );
 
