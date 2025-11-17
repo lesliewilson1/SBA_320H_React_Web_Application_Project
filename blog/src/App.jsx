@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div className="app-container">
-        <h1>Ask Leslie for Free {'(Beta Version)'}</h1>
+        <h1 className="rainbow-text">Ask <br />Leslie.</h1>
         <Form>
           
         </Form>

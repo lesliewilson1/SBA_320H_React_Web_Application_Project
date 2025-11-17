@@ -41,19 +41,19 @@ export default function Form() {
               type="text"
               required
               value={question}
-
+              size={50}
               onChange={e => {
                 setQuestion(e.target.value)
               } }
             />
           </label>
           <button type="submit">
-              Submit Here
+              Submit
             </button>
 
       </form>
 
-      {showQuestion && <h3>Question: {showQuestion}</h3>}
+      {showQuestion && <h3 className="question">Question: {showQuestion}</h3>}
       <Api question={showQuestion} />
 
     </>
