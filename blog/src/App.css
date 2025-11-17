@@ -6,7 +6,7 @@
 }
 
 .app-container {
-  
+
 }
 
 h1 {
@@ -76,5 +76,7 @@ button {
   box-shadow: 0 0 20px #eee;
   border-radius: 20px;
   display: block;
-  color:#222121
+  color:#222121;
+  max-width: 500px;
+  max-height: 4.5em;
 }
